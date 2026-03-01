@@ -7,7 +7,7 @@ const app = express();
 
 // 1. The Bouncers: Allow frontend to talk to us, and understand JSON data
 app.use(cors({
-    origin: 'https://certifysync.vercel.app' // YOUR NEW REBRANDED LINK!
+    origin: 'https://certifysync.vercel.app'
 }));
 app.use(express.json());
 
