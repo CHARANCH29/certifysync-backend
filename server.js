@@ -6,7 +6,9 @@ require('dotenv').config();
 const app = express();
 
 // 1. The Bouncers: Allow frontend to talk to us, and understand JSON data
-app.use(cors());
+app.use(cors({
+    origin: 'https://certifysync.vercel.app' // YOUR NEW REBRANDED LINK!
+}));
 app.use(express.json());
 
 // 2. The Vault: Load your secret Cloudinary keys
